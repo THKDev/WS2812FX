@@ -1,3 +1,8 @@
+# WS2821FX for ESP8266 RTOS
+This fork of [WS2821FX](https://github.com/kitesurfer1404/WS2812FX) can be used as component under your [EPS8266_RTOS ESP-IDF](https://github.com/espressif/ESP8266_RTOS_SDK) style project. It depends on [NeoPixelBus for ESP8266-RTOS](https://github.com/THKDev/NeoPixelBus)
+
+
+
 ![WS2812FX library](https://raw.githubusercontent.com/kitesurfer1404/WS2812FX/master/WS2812FX_logo.png)
 
 WS2812FX - More Blinken for your LEDs!
@@ -18,14 +23,13 @@ Features
 Download, Install and Example
 -----------------------------
 
-You can **search for WS2812FX in the Arduino IDE Library Manager** or install the latest (or development) version manually:
+* Install [NeoPixelBus for ESP8266-RTOS](https://github.com/THKDev/NeoPixelBus) under components of your project folder.
+* Download this repository also under your components folder.
+* add both directories to component.mk in the components folder.
 
-
-* Install the famous [Adafruit NeoPixel library](https://github.com/adafruit/Adafruit_NeoPixel) (v1.1.4 or newer)
-* Download this repository.
-* Extract to your Arduino libraries directory.
-* Open Arduino IDE.
-* Now you can choose File > Examples > WS2812FX > ...
+```makefile
+COMPONENT_SRCDIRS := NeoPixelBus WS2812FX
+```
 
 See examples for basic usage.
 
