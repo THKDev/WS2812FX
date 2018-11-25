@@ -147,8 +147,8 @@ class Adafruit_NeoPixel : public NPB_IMPL {
         const uint16_t numLEDs;
         uint16_t numBytes;
         uint8_t brightness;
-        static constexpr uint8_t  rOffset = 3;
-        static constexpr uint8_t  wOffset = 4;
+        static constexpr uint8_t  rOffset = NeoGrbFeature::PixelSize;
+        static constexpr uint8_t  wOffset = NeoGrbFeature::PixelSize;
         
     private:
         static const uint8_t _sineTable[];
